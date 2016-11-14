@@ -1,0 +1,30 @@
+{
+  "name": "express_session",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel index.js --out-file server.js --presets=react",
+    "app": "babel app.jsx --out-file app.js --presets=react,es2015 --plugins=transform-class-properties",
+    "project": "npm run build && npm run app && webpack ",
+    "clean": "rm -f site.js app.js server.js bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-loader": "^6.2.7",
+    "babel-plugin-transform-class-properties": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-session": "^1.14.2",
+    "helmet": "^3.1.0",
+    "morgan": "^1.7.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "session-file-store": "^0.2.2",
+    "webpack": "^1.13.3"
+  }
+}
